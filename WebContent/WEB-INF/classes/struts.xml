@@ -6,8 +6,10 @@
 
 <package name="default" extends="struts-dafault" namespace="">
 	<global-results>
-		<result name="error">/exception.error.jsp</result>
+		<result name="error">/exception/error.jsp</result>
 	</global-results>
 </package>
+
+<include file="struts-test.xml"/>
 
 </struts> 
