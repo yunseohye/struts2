@@ -13,7 +13,7 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
-	<!-- CharEncoding 필터 -->
+	<!-- CharEncoding 필터
 	<filter>
 		<filter-name>charFilter</filter-name>
 		<filter-class>com.filter.CharEncoding</filter-class>
@@ -24,6 +24,18 @@
 	</filter>
 	<filter-mapping>
 		<filter-name>charFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	 -->
+
+	<!-- Struts2 환경셋팅 -->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
