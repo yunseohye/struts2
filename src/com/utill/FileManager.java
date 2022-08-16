@@ -66,10 +66,12 @@ public class FileManager {
 			fos.write(buffer,0,data);
 		}
 		
+		fis.close();
+		fos.close();
+		
 		return newFileName;
 		
 	}
-	
 	
 	
 	//파일 다운로드 메소드
