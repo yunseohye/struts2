@@ -10,6 +10,18 @@
 	</global-results>
 </package>
 
-<include file="struts-board.xml"/>
+<package name="main" extends="struts-default" namespace="/">
+	<result-types>
+		<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+	</result-types>
+
+	<action name="main">
+		<result type="tiles">mainLayout</result>
+	</action>
+</package>
+
+
+	<include file="struts-board.xml"/>
+	<include file="struts-file.xml"/>
 
 </struts> 
